@@ -7,12 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-face {
-    /* animation: face-blink 3s cubic-bezier(0.65, 0, 0.35, 1) 2s infinite normal forwards; */
-  }
-}
-
 /* Pallete:
   Main: #3D8D7A
   Antimain: #FBFFE4
@@ -20,7 +14,18 @@
   Special: #A3D1C6
 */
 
-.App-header {
+.App-header, .App-footer {
+  background-color: #FBFFE4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #3D8D7A;
+}
+
+.App-main {
   background-color: #FBFFE4;
   min-height: 100vh;
   display: flex;
@@ -33,18 +38,4 @@
 
 .App-link {
   color: #B3D8A8;
-}
-
-@keyframes face-blink {
-	0% {
-		opacity: 1;
-	}
-
-	50% {
-		opacity: 0.2;
-	}
-
-	100% {
-		opacity: 1;
-	}
 }
