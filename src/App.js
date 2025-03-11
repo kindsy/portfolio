@@ -1,24 +1,25 @@
-// import face from './face.svg';
 import face from './ani-face.gif';
+import { Routing } from './Routing';
 import './App.css';
 
-const Year = new Date().getFullYear() +"";
+const Year = new Date().getFullYear() + "";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
+        <a href='/'>
+            <img src={face} className="App-face" alt="face"/>
+        </a>
         <a href="https://www.linkedin.com/in/kailindsay/" target="_blank" rel="noreferrer">
-          <img src={face} className="App-face" alt="face"/>
+          Kai Lindsay.
         </a>
         <p>
           a narrative portfolio.
         </p>
       </header>
       <main className="App-main">
-        <p>
-          UX/UI is my passion.
-        </p>
+        <Routing />
       </main>
       <footer className="App-footer">
         <p>

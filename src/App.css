@@ -7,6 +7,11 @@
   pointer-events: none;
 }
 
+.face404 {
+  height: 40vmin;
+  pointer-events: none;
+}
+
 /* Pallete:
   Main: #3D8D7A
   Antimain: #FBFFE4
