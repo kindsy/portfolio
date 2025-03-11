@@ -1,7 +1,9 @@
+import Thought from '../ThoughtCanvas';
+
 export const ThoughtsPage = () => {
     return (
         <div className="ThoughtsPage">
-        <header className="ThoughtsPage-header">
+        <header className="App-header">
             <a href='/'>
                 {/* <img src={face} className="App-face" alt="face"/> */}
             </a>
@@ -9,16 +11,13 @@ export const ThoughtsPage = () => {
             a place for thoughts.
             </p>
         </header>
-        <main className="ThoughtsPage-main">
+        <main className="App-main">
             <p>
-            thoughts.
+                today's thought:
             </p>
+
+            <Thought />
         </main>
-        <footer className="ThoughtsPage-footer">
-            <p>
-            {/* © {Year} kai lindsay. all rights. */}
-            </p>
-        </footer>
         </div>
     );
 }

@@ -31,16 +31,27 @@
 }
 
 .App-main {
-  background-color: #FBFFE4;
+  background-color: #3D8D7A;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #3D8D7A;
+  color: #FBFFE4;
 }
 
 .App-link {
   color: #B3D8A8;
+}
+
+a {
+  text-decoration: none;
+  color: #2c6e52;
+  text-shadow: #B3D8A8 1px 1px 1px;
+}
+
+canvas {
+  display: block;
+  background-color: #FBFFE4;
 }

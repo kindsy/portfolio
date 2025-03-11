@@ -1,19 +1,31 @@
 // import face from './face.svg';
 import face from '../ani-face.gif';
 
-const Year = new Date().getFullYear() +"";
-
 export const HomePage = () => {
   return (
     <div className="HomePage">
+      <header className="App-header">
+        <a href='/'>
+            <img src={face} className="App-face" alt="face"/>
+        </a>
+        <a href="https://www.linkedin.com/in/kailindsay/" target="_blank" rel="noreferrer">
+          Kai Lindsay.
+        </a>
         <p>
-          welcome.
+          a narrative portfolio.
         </p>
-        <p>
-          <a href='/thoughts'>
-            thoughts.
-          </a>
-        </p>
+        </header>
+
+        <main className="App-main">
+          <p>
+            welcome.
+          </p>
+          <p>
+            <a href='/thoughts'>
+              thoughts.
+            </a>
+          </p>
+        </main>
     </div>
   );
 }
